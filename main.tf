@@ -1,4 +1,3 @@
-resource "azurerm_resource_group" "rg" {
-  name     = var.rg_name
-  location = "West Europe"
+resource "aws_s3_bucket" "s3" {
+  bucket = var.bucket_name
 }
