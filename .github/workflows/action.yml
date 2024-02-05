@@ -8,12 +8,6 @@ on:
         description: True or False
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: greet
-        run: | 
-          echo "environment is ${{ github.event.inputs.abc }} / ${{ inputs.abc }}"
+  build-on-dev:
+    uses: ./.github/workflows/dependent-action.yml
+      
