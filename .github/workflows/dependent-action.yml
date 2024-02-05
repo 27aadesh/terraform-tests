@@ -1,1 +1,19 @@
-, 
+name: CI
+
+on:
+  workflow_call:
+    inputs:
+      condi:
+        type: boolean
+        description: True or False
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: greet
+        run: | 
+          echo "environment is ${{ inputs.condi }}"
