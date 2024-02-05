@@ -2,10 +2,6 @@ name: Condi
 
 on:
   workflow_call:
-    inputs:
-      condi:
-        type: boolean
-        description: True or False
 
 jobs:
   build:
@@ -16,4 +12,4 @@ jobs:
 
       - name: greet
         run: | 
-          echo "environment is ${{ inputs.condi }}"
+          echo "Hello World"
