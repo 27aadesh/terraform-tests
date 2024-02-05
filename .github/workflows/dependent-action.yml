@@ -1,4 +1,4 @@
-name: CI
+name: Condi
 
 on:
   workflow_call:
