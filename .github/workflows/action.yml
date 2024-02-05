@@ -9,5 +9,6 @@ on:
 
 jobs:
   build-on-dev:
+    if: ${{ inputs.abc }}
     uses: ./.github/workflows/dependent-action.yml
       
